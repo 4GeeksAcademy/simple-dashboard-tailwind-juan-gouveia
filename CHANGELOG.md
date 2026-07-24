@@ -15,3 +15,4 @@ All notable changes to this project are documented in this file.
 - Añadida sección Drivers; márgenes entre secciones; links nav (6108d3a)
 - Creada automatización para changelog.md (9ede25f)
 - changelog update (63356f4)
+- CHANGELOG.md update (136efd5)
