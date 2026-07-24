@@ -32,17 +32,54 @@
         </div>
 
             <ul class="hidden border-t border-pink-200 bg-white peer-checked:block md:hidden">
-                <li><button type="button" class="block w-full border-b border-pink-100 px-4 py-3 text-left text-sm text-pink-800 hover:bg-pink-100">KPI's</button></li>
+                <li><a href="#kpis" class="block w-full border-b border-pink-100 px-4 py-3 text-left text-sm text-pink-800 hover:bg-pink-100">KPI's</a></li>
                 <li><button type="button" class="block w-full border-b border-pink-100 px-4 py-3 text-left text-sm text-pink-800 hover:bg-pink-100">Drivers</button></li>
                 <li><button type="button" class="block w-full border-b border-pink-100 px-4 py-3 text-left text-sm text-pink-800 hover:bg-pink-100">Detalles</button></li>
             </ul>
     </nav>
-    <main class="mx-auto max-w-6xl px-3 py-4 md:px-4 lg:px-8">
-        <h1 class="mb-4 text-xl font-semibold text-pink-700 md:text-2xl lg:text-3xl">Bienvenido al Panel de Control</h1>
-        <p class="mb-6 text-sm text-pink-800 md:text-base lg:text-lg">Aquí puedes monitorear y gestionar tus KPI's, Drivers y Detalles de manera eficiente.</p>
-    </main>
-    <section>
 
+    <!---Bienvenida al dashboard-->
+    <main id="main-top" class="mx-auto border-b border-pink-200 max-w-6xl px-3 py-4 md:px-4 lg:px-8">
+        <h1 class="mb-4 text-xl font-semibold text-black md:text-2xl lg:text-3xl">Bienvenid@ a tu Panel de Control</h1>
+        <p class="mb-6 text-sm text-black md:text-base lg:text-lg">Desde aquí puedes monitorear y gestionar tus KPI's, Drivers y Detalles de manera eficiente.</p>
+    </main>
+
+    <!---Sección de KPI's-->
+    <section class="bg-white border-b border-pink-200 mx-auto max-w-6xl px-3 py-4 md:px-4 lg:px-8" id="kpis">
+        <h2 class="mb-2 text-lg font-semibold text-pink-700 md:text-xl lg:text-2xl">KPI's</h2>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+
+            <article class="rounded border border-pink-200 p-4">
+                <h3 class="mb-2 text-base font-semibold text-black md:text-lg lg:text-xl">Volumen de Ventas</h3>
+                <p class="text-sm text-black md:text-base lg:text-lg">Descripción del KPI 1.</p>
+            </article>
+
+            <article class="rounded border border-pink-200 p-4">
+                <h3 class="mb-2 text-base font-semibold text-black md:text-lg lg:text-xl">Volumen de Ventas</h3>
+                <p class="text-sm text-black md:text-base lg:text-lg">Descripción del KPI 1.</p>
+            </article>
+
+            <article class="rounded border border-pink-200 p-4">
+                <h3 class="mb-2 text-base font-semibold text-black md:text-lg lg:text-xl">Volumen de Ventas</h3>
+                <p class="text-sm text-black md:text-base lg:text-lg">Descripción del KPI 1.</p>
+            </article>
+
+            <article class="rounded border border-pink-200 p-4">
+                <h3 class="mb-2 text-base font-semibold text-black md:text-lg lg:text-xl">Volumen de Ventas</h3>
+                <p class="text-sm text-black md:text-base lg:text-lg">Descripción del KPI 1.</p>
+            </article>
+            
+        </div>
+        <div class="mt-4 flex justify-end">
+            <a
+                href="#main-top"
+                class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-pink-200 bg-white text-pink-700 shadow-sm hover:bg-pink-100"
+                aria-label="Volver arriba"
+                title="Volver arriba"
+            >
+                ↑
+            </a>
+        </div>
     </section>
 
 </body>
