@@ -14,3 +14,4 @@ All notable changes to this project are documented in this file.
 - Botón Volver Arriba flotante y nav fijada (87afb43)
 - Añadida sección Drivers; márgenes entre secciones; links nav (6108d3a)
 - Creada automatización para changelog.md (9ede25f)
+- changelog update (63356f4)
