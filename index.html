@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css" />
     <title>Panel de Control</title>
 </head>
 
@@ -48,27 +49,118 @@
     <section class="bg-white border-b border-pink-200 mx-auto max-w-6xl px-3 py-4 md:px-4 lg:px-8" id="kpis">
         <h2 class="mb-2 text-lg font-semibold text-pink-700 md:text-xl lg:text-2xl">KPI's</h2>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-
+    
+    <!---Volumen Ventas-->
             <article class="rounded border border-pink-200 p-4">
                 <h3 class="mb-2 text-base font-semibold text-black md:text-lg lg:text-xl">Volumen de Ventas</h3>
-                <p class="text-sm text-black md:text-base lg:text-lg">Descripción del KPI 1.</p>
+                <p class="mb-2 text-sm text-black md:text-base lg:text-[1rem]">Ventas realizadas por mes.</p>
+                <p class="mb-2 text-sm text-green-600 text-center md:text-base lg:text-lg">Total: 550 Unidades</p>
+                <a href="#" class="block w-full text-right text-sm text-blue-400 hover:underline">Ver más</a>
             </article>
 
+    <!---Más Vendidos-->
             <article class="rounded border border-pink-200 p-4">
-                <h3 class="mb-2 text-base font-semibold text-black md:text-lg lg:text-xl">Volumen de Ventas</h3>
-                <p class="text-sm text-black md:text-base lg:text-lg">Descripción del KPI 1.</p>
+                <h3 class="mb-2 text-base font-semibold text-black md:text-lg lg:text-xl">Más Vendidos</h3>
+                <ul>
+                    <li class="mb-1 text-sm text-black md:text-base lg:text-1rem">Producto A: 300 Unidades</li>
+                    <li class="mb-1 text-sm text-black md:text-base lg:text-1rem">Producto B: 250 Unidades</li>
+                    <li class="mb-1 text-sm md:text-base lg:text-1rem">
+                        <span class="text-black">Producto C:</span>
+                        <span class="text-red-600">0 Unidades</span></li>
+                </ul>
+                <a href="#" class="block w-full text-right text-sm text-blue-400 hover:underline">Ver más</a>
             </article>
 
+    <!---Ventas por Plataforma-->
             <article class="rounded border border-pink-200 p-4">
-                <h3 class="mb-2 text-base font-semibold text-black md:text-lg lg:text-xl">Volumen de Ventas</h3>
-                <p class="text-sm text-black md:text-base lg:text-lg">Descripción del KPI 1.</p>
+                <h3 class="mb-2 text-base font-semibold text-black md:text-lg lg:text-xl">Ventas por Plataforma</h3>
+                <section>
+                    <details class="mt-2 mb-2">
+                    <summary class="flex cursor-pointer list-none items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
+                        <h4 class="text-sm text-black">
+                        <span class="font-semibold">Instagram:</span> 200 Unidades
+                        </h4>
+                        <span class="text-sm text-blue-500 hover:underline md:text-base lg:text-lg">...</span>
+                    </summary>
+
+                    <ul class="ml-8 mt-2">
+                        <li class="mb-1 text-sm text-black">Producto A: 130 Unidades</li>
+                        <li class="mb-1 text-sm text-black">Producto B: 70 Unidades</li>
+                        <li class="mb-1 text-sm text-black">Producto C: 0 Unidades</li>
+                    </ul>
+                    </details>
+                </section>
+
+                <section>
+                    <details class="mt-2 mb-2">
+                    <summary class="flex cursor-pointer list-none items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
+                        <h4 class="text-sm text-black">
+                        <span class="font-semibold">Facebook:</span> 50 Unidades
+                        </h4>
+                        <span class="text-sm text-blue-500 hover:underline md:text-base lg:text-lg">...</span>
+                    </summary>
+
+                    <ul class="ml-8 mt-2">
+                        <li class="mb-1 text-sm text-black">Producto A: 20 Unidades</li>
+                        <li class="mb-1 text-sm text-black">Producto B: 30 Unidades</li>
+                        <li class="mb-1 text-sm text-black">Producto C: 0 Unidades</li>
+                    </ul>
+                    </details>
+                </section>
+
+                <section>
+                    <details class="mt-2 mb-2">
+                    <summary class="flex cursor-pointer list-none items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
+                        <h4 class="text-sm text-black">
+                        <span class="font-semibold">TikTok:</span> 300 Unidades
+                        </h4>
+                        <span class="text-sm text-blue-500 hover:underline md:text-base lg:text-lg">...</span>
+                    </summary>
+
+                    <ul class="ml-8 mt-2">
+                        <li class="mb-1 text-sm text-black">Producto A: 150 Unidades</li>
+                        <li class="mb-1 text-sm text-black">Producto B: 150 Unidades</li>
+                        <li class="mb-1 text-sm text-black">Producto C: 0 Unidades</li>
+                    </ul>
+                    </details>
+                </section>
+
+                <a href="#" class="block w-full text-right text-sm text-blue-400 hover:underline">Ver más</a>
             </article>
 
+    <!---Comparativa Mensual-->
             <article class="rounded border border-pink-200 p-4">
-                <h3 class="mb-2 text-base font-semibold text-black md:text-lg lg:text-xl">Volumen de Ventas</h3>
-                <p class="text-sm text-black md:text-base lg:text-lg">Descripción del KPI 1.</p>
+                <h3 class="mb-2 text-base font-semibold text-black md:text-lg lg:text-xl">Comparativa Mensual</h3>
+
+                <table class="charts-css line show-data-axes show-primary-axis w-full text-black">
+                <caption class="sr-only">Comparativa mensual</caption>
+                    <thead>
+                        <tr>
+                        <th scope="col">Mes</th>
+                        <th scope="col">Unidades</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Abr</th>
+                            <td style="--size: 0.45;"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">May</th>
+                            <td style="--start: 0.45; --size: 0.62;"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Jun</th>
+                            <td style="--start: 0.62; --size: 0.78;"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Jul</th>
+                            <td style="--start: 0.78; --size: 0.66;"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
-            
+
         </div>
         <div class="mt-4 flex justify-end">
             <a
