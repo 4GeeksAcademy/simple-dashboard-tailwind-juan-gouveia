@@ -10,7 +10,7 @@
 
 <body class="bg-pink-50 pt-12 md:pt-14 lg:pt-16">
 
-    <!-- Barra de navegación responsiva -->
+    <!-- Barra de navegación responsiva fijada-->
     <nav class="fixed top-0 left-0 right-0 z-50 w-full border-b border-pink-200 bg-white">
         <input id="menu-toggle" type="checkbox" class="peer hidden" />
 
@@ -26,16 +26,16 @@
             </label>
 
             <ul class="hidden md:flex md:items-center md:gap-1 lg:gap-3">
-                <li><button type="button" class="rounded px-3 py-2 text-sm text-pink-800 hover:bg-pink-100 md:text-sm lg:px-5 lg:text-base">KPI's</button></li>
-                <li><button type="button" class="rounded px-3 py-2 text-sm text-pink-800 hover:bg-pink-100 md:text-sm lg:px-5 lg:text-base">Drivers</button></li>
-                <li><button type="button" class="rounded px-3 py-2 text-sm text-pink-800 hover:bg-pink-100 md:text-sm lg:px-5 lg:text-base">Detalles</button></li>
+                <li><a href="#kpis" class="rounded px-3 py-2 text-sm text-pink-800 hover:bg-pink-100 md:text-sm lg:px-5 lg:text-base">KPI's</a></li>
+                <li><a href="#drivers" class="rounded px-3 py-2 text-sm text-pink-800 hover:bg-pink-100 md:text-sm lg:px-5 lg:text-base">Drivers</a></li>
+                <li><a href="#detalles" class="rounded px-3 py-2 text-sm text-pink-800 hover:bg-pink-100 md:text-sm lg:px-5 lg:text-base">Detalles</a></li>
             </ul>
         </div>
 
             <ul class="hidden border-t border-pink-200 bg-white peer-checked:block md:hidden">
                 <li><a href="#kpis" class="block w-full border-b border-pink-100 px-4 py-3 text-left text-sm text-pink-800 hover:bg-pink-100">KPI's</a></li>
                 <li><a href="#drivers" class="block w-full border-b border-pink-100 px-4 py-3 text-left text-sm text-pink-800 hover:bg-pink-100">Drivers</a></li>
-                <li><button type="button" class="block w-full border-b border-pink-100 px-4 py-3 text-left text-sm text-pink-800 hover:bg-pink-100">Detalles</button></li>
+                <li><a href="#detalles" class="block w-full border-b border-pink-100 px-4 py-3 text-left text-sm text-pink-800 hover:bg-pink-100">Detalles</a></li>
             </ul>
     </nav>
 
@@ -169,10 +169,66 @@
     <!---Sección Drivers-->
     <section class="bg-white border-b border-pink-200 mx-auto max-w-6xl px-3 py-4 md:px-4 lg:px-8 mb-6 md:mb-8" id="drivers">
         <h2 class="mb-2 text-lg font-semibold text-pink-700 md:text-xl lg:text-2xl">Drivers</h2>
-        <p class="mb-6 text-sm text-black md:text-base lg:text-lg">¿Qué pondremos?</p>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
+            <!---Rendimiento por Plataforma-->
+            <article class="rounded border border-pink-200 p-4">
+                <h3 class="mb-2 text-base font-semibold text-black md:text-lg lg:text-xl">Rendimiento por Plataforma</h3>
+                <table class="w-full border border-collapse">
+                    <thead class="border border-pink-200">
+                        <tr>
+                        <th class="px-3 py-1 text-left text-sm text-black border-r border-pink-200 md:text-base lg:text-lg">Plataforma</th>
+                        <th class="px-3 py-1 text-left text-sm text-black md:text-base lg:text-lg">Rendimiento</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="[&>tr:nth-child(odd)]:bg-pink-50 [&>tr:nth-child(even)]:bg-pink-100">
+                        <tr>
+                        <td class="px-3 py-1 text-sm text-black border-r border-pink-200 md:text-base lg:text-lg">Instagram</td>
+                        <td class="px-3 py-1 text-sm text-black md:text-base lg:text-lg">30%</td>
+                        </tr>
+                        <tr>
+                        <td class="px-3 py-1 text-sm text-black border-r border-pink-200 md:text-base lg:text-lg">Facebook</td>
+                        <td class="px-3 py-1 text-sm text-black md:text-base lg:text-lg">20%</td>
+                        </tr>
+                        <tr>
+                        <td class="px-3 py-1 text-sm text-black border-r border-pink-200 md:text-base lg:text-lg">TikTok</td>
+                        <td class="px-3 py-1 text-sm text-black md:text-base lg:text-lg">50%</td>
+                        </tr>
+                    </tbody>
+                    </table>
+            </article>
+
+            <!---Rendimiento por Producto-->
+            <article class="rounded border border-pink-200 p-4">
+                <h3 class="mb-2 text-base font-semibold text-black md:text-lg lg:text-xl">Rendimiento por Producto</h3>
+                                <table class="w-full border border-collapse">
+                    <thead class="border border-pink-200">
+                        <tr>
+                        <th class="px-3 py-1 text-left text-sm text-black border-r border-pink-200 md:text-base lg:text-lg">Plataforma</th>
+                        <th class="px-3 py-1 text-left text-sm text-black md:text-base lg:text-lg">Rendimiento</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="[&>tr:nth-child(odd)]:bg-pink-50 [&>tr:nth-child(even)]:bg-pink-100">
+                        <tr>
+                        <td class="px-3 py-1 text-sm text-black border-r border-pink-200 md:text-base lg:text-lg">Producto A</td>
+                        <td class="px-3 py-1 text-sm text-black md:text-base lg:text-lg">55%</td>
+                        </tr>
+                        <tr>
+                        <td class="px-3 py-1 text-sm text-black border-r border-pink-200 md:text-base lg:text-lg">Producto B</td>
+                        <td class="px-3 py-1 text-sm text-black md:text-base lg:text-lg">45%</td>
+                        </tr>
+                        <tr>
+                        <td class="px-3 py-1 text-sm text-black border-r border-pink-200 md:text-base lg:text-lg">Producto C</td>
+                        <td class="px-3 py-1 text-sm text-black md:text-base lg:text-lg">0%</td>
+                        </tr>
+                    </tbody>
+                    </table>
+            </article>
+        </div>
     </section> 
 
-    <!---Botón Volver Arriba-->
+    <!---Botón Volver Arriba Flotante-->
     <div class="fixed bottom-4 right-4 z-50 md:bottom-6 md:right-6">
         <a
         href="#"
