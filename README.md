@@ -34,6 +34,22 @@ $ pip3 install flask && python3 server.py
 </head>
 ```
 
+## Automatic Changelog
+
+This repository includes an automatic changelog workflow:
+
+- `scripts/update-changelog.sh` regenerates `CHANGELOG.md` from git history.
+- `.githooks/pre-push` runs the script before each push.
+
+If `CHANGELOG.md` needs updates, the push is stopped, the file is staged, and you can commit it before pushing again.
+
+To enable hooks for this repository (run once):
+
+```bash
+git config core.hooksPath .githooks
+chmod +x scripts/update-changelog.sh .githooks/pre-push
+```
+
 ### Contributors
 
 This template was built as part of the [Full Stack Developer course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) at [4Geeks Academy Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).

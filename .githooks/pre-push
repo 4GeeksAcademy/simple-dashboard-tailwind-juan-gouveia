@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+
+"$repo_root/scripts/update-changelog.sh"
+
+git add CHANGELOG.md
+
+if ! git diff --cached --quiet -- CHANGELOG.md; then
+  echo ""
+  echo "pre-push: CHANGELOG.md was regenerated and staged."
+  echo "pre-push: Commit CHANGELOG.md, then run git push again."
+  exit 1
+fi
